@@ -76,7 +76,7 @@ const SOLAR_SYSTEM = {
         goal: 'ee16',
         difficulty: 8,
     },
-    'black-hole': {
+    'black-hole2': {
         rp_req: 637,
         goal: 'ee25',
         difficulty: 9,
