@@ -250,11 +250,11 @@ const SPACEBASE_UPGS = {
     o6: {
         unl:()=>true,
         diff: 9,
-        cost:a=>a.pow_base(1.07).pow_base(1e120),
-        bulk:a=>a.log(1e120).log(1.07).floor(),
+        cost:a=>a.pow_base(1.05).pow_base(1e120),
+        bulk:a=>a.log(1e120).log(1.05).floor(),
         res: "observ",
         effect(a) {
-            let x = a.pow_base(1.07).mul(a.add(1))
+            let x = a.pow_base(1.05).mul(a.add(1))
             return x
         },
         effDesc: x=>formatPow(x),
@@ -478,23 +478,11 @@ const SPACEBASE_UPGS = {
         },
         effDesc: x=>"+"+format(x),
     },
-    t6: {
-        unl:()=>true,
-        diff: 6,
-        cost:a=>a.sumBase(1.05).pow_base(1e10).mul(1e90),
-        bulk:a=>a.div(1e90).log(1e10).sumBase(1.05,true).add(1).floor(),
-        res: "traject",
-        effect(a) {
-            let x = a.mul(.01)
-            return x
-        },
-        effDesc: x=>"+"+format(x),
-    },
     t7: {
         unl:()=>true,
         diff: 9,
         cost:a=>a.sumBase(1.05).pow_base(1e15).mul(1e120),
-        bulk:a=>a.div(1e120).log(1e15).sumBase(1.10,true).add(1).floor(),
+        bulk:a=>a.div(1e120).log(1e15).sumBase(1.05,true).add(1).floor(),
         res: "traject",
         effect(a) {
             let x = a.mul(.01)
