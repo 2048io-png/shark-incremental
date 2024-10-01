@@ -498,7 +498,7 @@ LANGUAGES.EN = {
         'core-9-name': `Sodium`,
         'core-9-desc': `${toTextStyle("Prestige",'prestige')} shards raise themselves to the exponent based on <b>Sodium</b>'s tier.`,
 
-        'core-10-name': `Phosphor`,
+        'core-10-name': `Phosphorus`,
         'core-10-desc': `${toTextStyle("Magmatic",'core')} fragments raise themselves based on <b>Phosphor</b>'s tier.`,
 
         'core-11-name': `Chromium`,
@@ -587,7 +587,7 @@ LANGUAGES.EN = {
 
             ["Ironic Iron", x=>`Improve <b>Iron</b> reactor better.`, x=>`Improve <b>Magnesium</b> reactor better.`],
             ["Piggy Bank", x=>`Improve <b>Nickel</b> reactor better.`, x=>`Improve <b>Sodium</b> reactor better.`],
-            ["Ozone", x=>`Improve <b>Oxygen</b> reactor better.`, x=>`Improve <b>Phosphor</b> reactor better.`],
+            ["Ozone", x=>`Improve <b>Oxygen</b> reactor better.`, x=>`Improve <b>Phosphorus</b> reactor better.`],
             ["Fake Radioactive Waste", x=>`Improve <b>Neon</b> reactor better.`, x=>`Improve <b>Chromium</b> reactor better.`],
 
             ["Strong Column 1", x=>`The above upgrades in the first column are <b>${formatPercent(x-1)}</b> stronger.`, x=>`The above upgrades, including charged, in the first column are <b>${formatPercent(x-1)}</b> stronger.`],
@@ -786,6 +786,7 @@ LANGUAGES.EN = {
             'uranus':  ["Uranus",`Uranus is the seventh-farthest planet in the solar system from the Sun. It was discovered in 1781 by English astronomer William Herschel and named after the Greek sky god Uranus. Uranus was the first planet discovered in modern times and with the aid of a telescope. Uranus is the third-largest planet in diameter and fourth largest in mass in the solar system. It is composed mostly of ice and rock, and its atmosphere contains hydrogen, helium, and methane. Uranus has a ring system and 28 satellites. Uranus' axis of rotation is “on its side,” so the planet orbits the Sun, alternately turning its north and south poles toward it.`,`Remove the ${toTextStyle('Shark','shark')} overpopulation. The multiplier of ${toTextStyle('Sharkoid Faith','humanoid')} is doubled.`],
             'neptune': ["Neptune",`Neptune is the eighth and farthest planet in the Solar System. Its distance from the Sun averages 4.5 billion kilometers. Neptune is one of the giant planets. It has 17 times the mass of Earth.  Neptune is fourth in equatorial diameter, 3.9 times larger than Earth. Neptune's atmosphere is similar to the gas envelopes of other major planets in the solar system. It consists mainly of hydrogen and helium, with admixtures of methane, water, ammonia, and other compounds. Neptune is considered one of the coldest planets in the solar system. Its average temperature ranges from -200 °C. Neptune's atmosphere has the strongest winds of any planet in the solar system.`,`Unlock the ${toTextStyle('Constellation','star')} that upgrade the ${toTextStyle('Black Hole','black-hole')} further for a powerful reward.`],
             'pluto':   ["Pluto",`Pluto is the largest known dwarf planet in the solar system, a trans-Neptunian object and the tenth most massive celestial body orbiting the Sun after the eight planets and Eridas. It is composed of rock and ice and has a mass about six times smaller than the mass of the Moon and a volume about three times smaller. Pluto has a large eccentricity of orbit and a large inclination to the ecliptic plane. Because of this, it is approaching the Sun at a distance of 29.7 a.u. and moving away at 49.3 a.u.`,`Unlock more ${toTextStyle('Remnant','black-hole')} upgrades again. ${toTextStyle('Constellation','star')} resources no longer get reset.`],
+            'black-hole2', ["Black Hole",`A black hole is a region of spacetime where gravity is so strong that nothing, not even light and other electromagnetic waves, is capable of possessing enough energy to escape it. Einstein's theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole. The boundary of no escape is called the event horizon. A black hole has a great effect on the fate and circumstances of an object crossing it, but it has no locally detectable features according to general relativity. In many ways, a black hole acts like an ideal black body, as it reflects no light. Quantum field theory in curved spacetime predicts that event horizons emit Hawking radiation, with the same spectrum as a black body of a temperature inversely proportional to its mass. This temperature is of the order of billionths of a kelvin for stellar black holes, making it essentially impossible to observe directly.`,`^1.05 stone gain, and new forge.`],
         },
         'build-rocket-part': x => `Build ${x} Rocket Parts.`,
         'total-rp': "total RP",
@@ -801,6 +802,7 @@ LANGUAGES.EN = {
             'o3': [`Space Prestige`,x=>`${toTextStyle('Prestige shards','prestige')} are boosted by ${x}.`],
             'o4': [`Space Core`,x=>`${toTextStyle('Magmatic fragments','core')} are boosted by ${x}.`],
             'o5': [`Space Radiation`,x=>`${toTextStyle('Radiation '+icon("radioactive"),'core')} production is boosted by ${x}.`],
+            'o6': [`Space ELO`,x=>`${toTextStyle('Shark','shark')} ELO are boosted by ${x}.`],
             
             'e1': [`Fish Exchanger`,x=>`${toTextStyle('Observatories','observ')} are boosted by ${x}.`],
             'e2': [`Prestige Exchanger`,x=>`${toTextStyle('Observatories','observ')} are boosted by ${x}.`],
@@ -821,6 +823,7 @@ LANGUAGES.EN = {
             't4': [`Space Fish III`,x=>`${toTextStyle('Fish','fish')} is boosted by ${x}.`],
             't5': [`Scaled Radiation`,x=>`The first 3 scalings of radioactive boost are delayed by ${x}.`],
             't6': [`The Transport II`,x=>`The base of “The Transport” is increased by ${x}.`],
+            't7': [`Space Prestige III`,x=>`${toTextStyle('Prestige shards','prestige')} are boosted by ${x}.`],
         },
         
         'experiment-reset': `Reset all previous space-base features, but increase the ${toTextStyle('Experiment','experiment')} tier for a powerful boost.`,
@@ -894,7 +897,7 @@ LANGUAGES.EN = {
         'progress-19-text': r => `Reach ${format(r)} total ${toTextStyle('Dark Matter','black-hole')}`,
 
         'progress-20-text': r => `Reach ${format(r)} total ${toTextStyle('Fish','fish')}`, 
-        get 'progress-20-cond-text'() { return `???` },
+        get 'progress-20-cond-text'() { return `??? (Not implemented)` },
 
         'maxed-progress': "All features unlocked!",
 
@@ -1002,7 +1005,7 @@ LANGUAGES.EN = {
         'next-at': "Next at",
         'depth': "Depth",
         'reward': "Reward",
-        'new-preset': "New Preset",
+        'new-preset': "Create New Preset",
         'maxed': "Maxed",
         'difficulty': "Difficulty",
 
