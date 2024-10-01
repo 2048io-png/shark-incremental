@@ -76,6 +76,11 @@ const SOLAR_SYSTEM = {
         goal: 'ee16',
         difficulty: 8,
     },
+    'black-hole': {
+        rp_req: 637,
+        goal: 'ee25',
+        difficulty: 9,
+    }
 }
 const SS_KEYS = Object.keys(SOLAR_SYSTEM)
 
@@ -238,6 +243,18 @@ const SPACEBASE_UPGS = {
         res: "observ",
         effect(a) {
             let x = a.pow_base(1.05).mul(a.add(1))
+            return x
+        },
+        effDesc: x=>formatPow(x),
+    },
+    o6: {
+        unl:()=>true,
+        diff: 9,
+        cost:a=>a.pow_base(1.07).pow_base(1e120),
+        bulk:a=>a.log(1e120).log(1.07).floor(),
+        res: "observ",
+        effect(a) {
+            let x = a.pow_base(1.07).mul(a.add(1))
             return x
         },
         effDesc: x=>formatPow(x),
@@ -461,12 +478,36 @@ const SPACEBASE_UPGS = {
         },
         effDesc: x=>"+"+format(x),
     },
+    t6: {
+        unl:()=>true,
+        diff: 6,
+        cost:a=>a.sumBase(1.05).pow_base(1e10).mul(1e90),
+        bulk:a=>a.div(1e90).log(1e10).sumBase(1.05,true).add(1).floor(),
+        res: "traject",
+        effect(a) {
+            let x = a.mul(.01)
+            return x
+        },
+        effDesc: x=>"+"+format(x),
+    },
+    t7: {
+        unl:()=>true,
+        diff: 9,
+        cost:a=>a.sumBase(1.05).pow_base(1e15).mul(1e120),
+        bulk:a=>a.div(1e120).log(1e15).sumBase(1.10,true).add(1).floor(),
+        res: "traject",
+        effect(a) {
+            let x = a.mul(.01)
+            return x
+        },
+        effDesc: x=>"+"+format(x),
+    },
 }
 const SPACEBASE_UPG_KEYS = Object.keys(SPACEBASE_UPGS)
 const SPACEBASE_UPGS_GROUPS = {
     o: [
         'o1','o2','o3','o4',
-        'o5','','','',
+        'o5','o6','','',
         'e1','e2','e3','e4',
     ],
     r: [
@@ -476,7 +517,7 @@ const SPACEBASE_UPGS_GROUPS = {
     ],
     t: [
         't1','t2','t3','t4',
-        't5','t6',
+        't5','t6','t7'
     ],
 }
 const SPACEBASE_RESEARCH = ['o2','o3','r2','t2']
