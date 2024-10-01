@@ -47,7 +47,6 @@ function setupHTML() {
     <button class="big-btn" id="wipe" onclick="wipeConfirm()">${text[5]}</button>
     <button class="big-btn" onclick="window.open('https://discord.gg/mrredshark77-club-710184682620190731')">${text[6]}</button>
     <button class="big-btn" onclick="window.open('https://boosty.to/mrredshark77/donate')">${text[7]}</button>
-    <button class="big-btn" onclick="window.open('https://mrredshark77.github.io/shark-incremental)">${text[8]}</button>
     `
 
     for (let x of document.getElementsByTagName('*')) if (x.id in lang_data && ALLOWED_LANG_KEY_TO_ELEMENT_ID.includes(x.id)) x.innerHTML = lang_text(x.id)
