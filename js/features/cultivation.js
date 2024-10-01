@@ -84,10 +84,11 @@ const ORES = {
         textColor: 'rgb(123,149,190)',
     },
     'unobtainium': {
-        dense: '1e400',
+        dense: 1e300,
         luck_penalty: 0.03141592653,
         color: '#000000',
-    }
+        textColor: 'rgb(85,85,85)',
+    },
 }
 const ORE_KEYS = Object.keys(ORES)
 
@@ -195,7 +196,7 @@ const MINING_TIER = {
         return b
     },
 
-    ascend_base_milestone: [1,3,6,12,25,50,70],
+    ascend_base_milestone: [1,3,6,12,25,50,71],
     ascend_gen_milestone: [10,15,30,60,70],
 
     get ascend_base() {
