@@ -656,6 +656,7 @@ LANGUAGES.EN = {
             'californium': "Californium-252",
             'oganesson': "Oganesson-294",
             'sharkium': "Sharkium",
+            'unobtainium': "Unobtainium",
         },
 
         'mined-resources-text': `Mined Resources`,
