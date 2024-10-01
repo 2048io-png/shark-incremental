@@ -685,6 +685,7 @@ LANGUAGES.EN = {
             x=>`<b>Uranium-235</b> amount is increased by <b>${formatMult(x)}</b>.`,
             x=>`<b>Berkelium-247</b> amount is increased by <b>${formatMult(x)}</b>.`,
             x=>`<b>Californium-252</b> amount is increased by <b>${formatMult(x)}</b>.`,
+            x=>`<b>Oganesson-294</b> amount is increased by <b>${formatMult(x)}</b>.`,
         ],
 
         // Forge
