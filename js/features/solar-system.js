@@ -505,7 +505,7 @@ const SPACEBASE_UPGS_GROUPS = {
     ],
     t: [
         't1','t2','t3','t4',
-        't5','t6','t7'
+        't5','t6','t7',''
     ],
 }
 const SPACEBASE_RESEARCH = ['o2','o3','r2','t2']
@@ -523,7 +523,7 @@ const EXPERIMENT_TIER = {
             player.solar_system.experiment = player.solar_system.experiment.add(1)
 
             player.solar_system.traject = E(0)
-            resetSpaceBaseUpgs(['t1','t2','t3','t4','t5','t6'])
+            resetSpaceBaseUpgs(['t1','t2','t3','t4','t5','t6','t7'])
             RESETS.traject.doReset()
         }
     },
