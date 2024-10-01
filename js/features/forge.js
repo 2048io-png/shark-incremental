@@ -20,10 +20,10 @@ const FORGE = {
         ],
     },
     drill: {
-        max: 8,
+        max: 9,
         unl: ()=>hasForgeUpgrade('anvil'),
 
-        time: [150, 300, 600, 900, 3000, 6000, 2e7, 1e45],
+        time: [150, 300, 600, 900, 3000, 6000, 2e7, 1e45, 1],
         cost: [
             [
                 ['stone',1e47],
@@ -51,6 +51,8 @@ const FORGE = {
                 ['vibranium',1e6],
             ],[
                 ['radium',1e3],
+            ],[
+                ['sharkium',1e9],
             ],
         ],
 
@@ -240,10 +242,10 @@ const FORGE = {
         ],
     },
     matter: {
-        max: 6,
+        max: 7,
         unl: ()=>hasForgeUpgrade('anvil',4),
 
-        time: [1e42,1e45,1e51,1e66,1e188,1],
+        time: [1e42,1e45,1e51,1e66,1e188,1,1],
         cost: [
             [
                 ['remnants',1e135],
@@ -263,6 +265,9 @@ const FORGE = {
             ],[
                 ['remnants','e450000'],
                 ['sharkium',1e4],
+            ],[
+                ['renmants','e33000000'],
+                ['unobtainium',100],
             ],
         ],
 
