@@ -28,7 +28,7 @@ const SHARK = {
 
         mult = mult.mul(simpleETEffect(0)).mul(simpleETEffect(1)).mul(simpleETEffect(2)).mul(simpleETEffect(3)).mul(getCRBoost(7)).mul(remnantUpgEffect(7))
 
-        exp = exp.add(researchEffect('f1',0)).add(getPAEffect(5,0)).mul(simpleCETEffect(0)).mul(simpleCETEffect(1)).mul(simpleCETEffect(2)).mul(simpleCETEffect(3)).mul(coreReactorEffect(11)).mul(spaceBaseUpgEffect(o6))
+        exp = exp.add(researchEffect('f1',0)).add(getPAEffect(5,0)).mul(simpleCETEffect(0)).mul(simpleCETEffect(1)).mul(simpleCETEffect(2)).mul(simpleCETEffect(3)).mul(coreReactorEffect(11)).mul(spaceBaseUpgEffect('o6'))
 
         tmp.shark_elo_mult = mult, tmp.shark_elo_exp = exp
 
