@@ -3,7 +3,7 @@ const FORGE = {
         max: 5,
         unl: ()=>true,
 
-        time: [10,300,6000,3153600,1e41],
+        time: [10,300,6000,1e24,1e41],
         cost: [
             [
                 ['bismuth',1e3],
