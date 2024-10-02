@@ -15,7 +15,7 @@ const FORGE = {
                 ['obsidian',1e5],
                 ['vibranium',1000],
             ],[
-                ['renmants',1e57],
+                ['renmants',1e57,true],
                 ['vibranium',1e239],
             ],[
                 ['radium',100],
