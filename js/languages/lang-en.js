@@ -498,8 +498,8 @@ LANGUAGES.EN = {
         'core-9-name': `Sodium`,
         'core-9-desc': `${toTextStyle("Prestige",'prestige')} shards raise themselves to the exponent based on <b>Sodium</b>'s tier.`,
 
-        'core-10-name': `Phosphorus`,
-        'core-10-desc': `${toTextStyle("Magmatic",'core')} fragments raise themselves based on <b>Phosphor</b>'s tier.`,
+        'core-10-name': `Phosphorous`,
+        'core-10-desc': `${toTextStyle("Magmatic",'core')} fragments raise themselves based on <b>Phosphorous</b>'s tier.`,
 
         'core-11-name': `Chromium`,
         'core-11-desc': `${toTextStyle("Humanoid",'humanoid')} shark increase the exponent of ${toTextStyle("Shark",'shark')} ELO based on <b>Chromium</b>'s tier.`,
@@ -657,6 +657,8 @@ LANGUAGES.EN = {
             'oganesson': "Oganesson-294",
             'sharkium': "Sharkium",
             'unobtainium': "Unobtainium",
+            'fandomium': "Fandomium-662",
+
         },
 
         'mined-resources-text': `Mined Resources`,
@@ -700,6 +702,7 @@ LANGUAGES.EN = {
             'shark': ['Distant Shark Level',`Delays the third scaling of ${toTextStyle('Shark','shark')} Level.`],
             'refined_shard': ['Energized Shard',`Increases the exponent of ${toTextStyle('Prestige','prestige')} shards.`],
             'wormhole': ['Wormhole',`Unlocks new Particle Accelerator.`],
+            'elo_extruder': ['ELO Extruder',`Increases the exponent of ${toTextStyle('Shark','shark')} ELO.`],
             'matter': ['Matter Condenser',`Increases ${toTextStyle('Remnant','black-hole')} generation.`],
         },
         'forge-progress': (x,s) => x ? `Forging <b>${x}</b>... <b>${s}</b>` : `Forge is empty`,
