@@ -257,6 +257,13 @@ const FORGE = {
                 ['fish','e1e13312',true],
             ],
         ],
+
+        effect(l) {
+            var x = Decimal.mul(l,0.01).add(1)
+
+            return x
+        },
+        effDesc: x => formatPow(x),
     },
     matter: {
         max: 7,
