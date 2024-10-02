@@ -66,7 +66,7 @@ const CURRENCIES = {
             x = expPow(x,exp).pow(coreReactorEffect(1)).mul(getSharkBonus("prestige")).mul(tmp.explore_eff[1][0])
 
             x = x.pow(tmp.explore_eff[3]).pow(simpleETEffect(13)).pow(getSharkRankBonus('prestige')).pow(forgeUpgradeEffect('shard'))
-            .pow(tmp.explore_eff[1][1]).pow(spaceBaseUpgEffect('o3')).pow(spaceBaseUpgEffect('r4')).pow(spaceBaseUpgEffect('t7'))
+            .pow(tmp.explore_eff[1][1]).pow(spaceBaseUpgEffect('o3')).pow(spaceBaseUpgEffect('r4'))
 
             if (hasResearch('dm2')) x = x.pow(remnantUpgEffect(4))
 
