@@ -89,6 +89,12 @@ const ORES = {
         color: '#000000',
         textColor: 'rgb(85,85,85)',
     },
+    'fandomium': {
+        dense: '1e10000',
+        luck_penalty: 0.01666666666,
+        color: `linear-gradient(0deg, rgb(255,255,255) 0%, rgb(0,0,0) 50%, rgb(0,255,0) 100%)`,
+        textColor: 'rgb(0,255,0)',
+    },
 }
 const ORE_KEYS = Object.keys(ORES)
 
@@ -133,7 +139,7 @@ const MINING_TIER = {
         if (a.gte(4)) x[11] = Decimal.pow(3,a.sub(3));
         if (a.gte(7)) x[12] = Decimal.pow(4,a.sub(6));
         if (a.gte(13)) x[13] = Decimal.pow(3,a.sub(12));
-        if (a.gte(67)) x[14] = Decimal.pow(2,a.sub(66));
+        if (a.gte(59)) x[14] = Decimal.pow(2,a.sub(58));
 
         return x
     },
@@ -196,8 +202,8 @@ const MINING_TIER = {
         return b
     },
 
-    ascend_base_milestone: [1,3,6,12,25,50,71],
-    ascend_gen_milestone: [10,15,30,60,70],
+    ascend_base_milestone: [1,3,6,12,25,50,70,85],
+    ascend_gen_milestone: [10,15,30,60,72,90],
 
     get ascend_base() {
         var b = this.ascend_base_milestone.filter(x => player.humanoid.mining_ascend.gte(x)).length
