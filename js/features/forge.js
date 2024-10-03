@@ -3,7 +3,7 @@ const FORGE = {
         max: 5,
         unl: ()=>true,
 
-        time: [10,300,6000,1e24,1e41],
+        time: [10,300,6000,1e41,1],
         cost: [
             [
                 ['bismuth',1e3],
@@ -15,10 +15,9 @@ const FORGE = {
                 ['obsidian',1e5],
                 ['vibranium',1000],
             ],[
-                ['fish','e1e13312',true],
-                ['vibranium',1e239],
-            ],[
                 ['radium',100],
+            ],[
+                ['sharkium',1e9],
             ],
         ],
     },
@@ -246,7 +245,7 @@ const FORGE = {
     },
     elo_extruder: {
         max: 2,
-        unl: ()=>hasForgeUpgrade('anvil',4),
+        unl: ()=>hasForgeUpgrade('anvil',5),
 
         time: [1e21,1e24],
         cost: [
@@ -267,7 +266,7 @@ const FORGE = {
     },
     matter: {
         max: 7,
-        unl: ()=>hasForgeUpgrade('anvil',5),
+        unl: ()=>hasForgeUpgrade('anvil',4),
 
         time: [1e42,1e45,1e51,1e66,1e188,1,1],
         cost: [
