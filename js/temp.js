@@ -2,6 +2,7 @@ var tmp = {}
 var options = {
     notation: "mixed_sc",
     max_range: 9,
+    mixed_sc: 63,
     pass: 0,
 }
 
@@ -109,4 +110,5 @@ function updateTemp() {
 function updateOptions() {
     options.notation = ['sc','st','mixed_sc','log','elemental'][player.radios["notation"]]
     options.max_range = [3,6,9,12,15][player.radios["comma-format"]]
+    options.mixed.sc = [33,63,303,3003][player.options.mixed_sc]
 }
