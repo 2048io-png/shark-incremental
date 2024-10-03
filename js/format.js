@@ -226,7 +226,7 @@ const FORMATS = {
         format(ex, acc, max) {
             ex = E(ex)
             let e = ex.log10().floor()
-            if (e.lt(options.mixed_sc) && e.gte(max)) return format(ex,acc,max,"st")
+            if (e.lt(63) && e.gte(max)) return format(ex,acc,max,"st")
             else {
                 if (ex.gte("eeee10")) {
                     let slog = ex.slog()
@@ -240,7 +240,7 @@ const FORMATS = {
         }
     },
     layer: {
-      layers: ["infinity","eternity","reality","equality","affinity","celerity","identity","vitality","immunity","atrocity"],
+      layers: ["infinity","eternity","reality","equality","affinity","celerity","identity","vitality","immunity","atrocity","immensity","severity","fatality","unfunity","calamity","futility","finality","unity","nanity"],
       format(ex, acc, max) {
         ex = E(ex)
         let layer = ex.max(1).log10().max(1).log(INFINITY_NUM.log10()).floor()
