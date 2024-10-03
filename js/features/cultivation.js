@@ -51,25 +51,25 @@ const ORES = {
     'radium': {
         color: `radial-gradient(circle, rgb(194,238,174) 0%, rgb(84,255,57) 100%)`,
         textColor: 'rgb(84,255,57)',
-        get mult() { return Decimal.mul(tmp.mining_tier_bonus[10]??1,sharkUpgEffect('m8')) },
+        get mult() { return Decimal.mul(tmp.mining_tier_bonus[10]??1,sharkUpgEffect('m8')).mul(sharkUpgEffect('m10')) },
     },
     'uranium': {
         dense: 5,
         color: `radial-gradient(circle, rgb(151,175,140) 0%, rgb(97,190,82) 100%)`,
         textColor: 'rgb(97,190,82)',
-        get mult() { return Decimal.mul(tmp.mining_tier_bonus[11]??1,1) },
+        get mult() { return Decimal.mul(tmp.mining_tier_bonus[11]??1,1).mul(sharkUpgEffect('m10')) },
     },
     'berkelium': {
         dense: 15,
         color: `radial-gradient(circle, rgb(255,0,0) 0%, rgb(255,127,0) 20%, rgb(255,255,0) 40%, rgb(127,255,0) 60%, rgb(0,255,0) 80%, rgb(0,255,127) 100%)`,
         textColor: 'rgb(0,255,127)',
-        get mult() { return Decimal.mul(tmp.mining_tier_bonus[12]??1,1) },
+        get mult() { return Decimal.mul(tmp.mining_tier_bonus[12]??1,1).mul(sharkUpgEffect('m10')) },
     },
     'californium': {
         dense: 100,
         color: `radial-gradient(circle, rgb(255,222,122) 0%, rgb(235,189,0) 100%)`,
         textColor: 'rgb(255,222,122)',
-        get mult() { return Decimal.mul(tmp.mining_tier_bonus[13]??1,1) },
+        get mult() { return Decimal.mul(tmp.mining_tier_bonus[13]??1,1).mul(sharkUpgEffect('m10')) },
     },
     'oganesson': {
         dense: 1e13,
