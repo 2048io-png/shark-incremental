@@ -1051,6 +1051,7 @@ LANGUAGES.EN = {
         'radio-desc' : {
             'notation': ['Formatting Notation',['Scientific','Standard','Mixed Scientific','Logarithm','Elemental']],
             'comma-format': ['Maximum OoMs of Number Commas',['3','6','9','12','15']],
+            'mixed-sci': ['Starting Number of Mixed Scientific',['e63','e93','e303','e3003']],
             'autosave': ['Autosaving',['Disabled','Enabled']],
             'autosave-time': ['Autosave Interval',['15s','30s','60s','120s']],
             'offline': ['Offline Progress',['Disabled','Enabled']],
