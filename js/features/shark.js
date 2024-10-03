@@ -330,11 +330,28 @@ const SHARK_UPGRADES = {
         effect: l=>l.mul(5),
         effDesc: x=>"+"+format(x,0),
     },
+    m10: {
+        unl: ()=>isSSObserved('moon'),
+        req: ()=>player.humanoid.mining_ascend.gte(25),
+
+        cost: l => {
+            let x = Decimal.pow(3,l.scaleAll('su_m3')).mul(10)
+            return x
+        },
+        bulk: x => {
+            return x.div(10).log(3).scaleAll('su_m3',true).floor().add(1)
+        },
+
+        curr: "oganesson",
+
+        effect: l=>Decimal.pow(2,l),
+        effDesc: x=>formatMult(x,0),
+    },
 }
 
 const SU_TABS = {
     'shark': ['s1','s2','s3','s4','s5','p1','p2','p3'],
-    'cultivation': ['m1','m2','m3','m4','m5','m6','m7','m8','m9'],
+    'cultivation': ['m1','m2','m3','m4','m5','m6','m7','m8','m9','m10'],
 }
 
 function canAffordSharkUpgrade(i) {
