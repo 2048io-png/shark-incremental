@@ -235,6 +235,10 @@ LANGUAGES.EN = {
         'su-m9-req': 'Mining Ascension 12',
         'su-m9-name': 'Super Mining Fortune',
         'su-m9-desc': `Increases the ${toColoredText('Super Mining Fortune '+icon('luck'),'orange')} by <b>+5</b> per level.`,
+        
+        'su-m10-req': 'Mining Ascension 25',
+        'su-m10-name': 'Super Ores',
+        'su-m10-desc': `Increases the first 4 super ores mined by <b>×2</b> per level.`,
 
         // Researches
 
