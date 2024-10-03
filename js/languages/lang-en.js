@@ -845,6 +845,7 @@ LANGUAGES.EN = {
             [`Stellar Prestige`, x=>`Boost ${toTextStyle('Prestige','prestige')} shards gain by ${x} to the exponent.`, x=>`Boost ${toTextStyle('Reservatories','reserv')} gain by ${x}.`],
             [`Stellar Fragments`, x=>`Boost ${toTextStyle('Magmatic','core')} fragments gain by ${x}.`, x=>`Boost ${toTextStyle('Trajectories','traject')} gain by ${x}.`],
             [`Stellar Sharks`, x=>`Boost the exponent of ${toTextStyle('Humanoid','humanoid')} sharks by ${x}.`, x=>`Reduce the ${toTextStyle('Experiment','experiment')} tier requirement by ${x}`],
+            [`Stellar Stone`, x=> `Boost the exponent of <b>Stone</b> by ${x}.`],
         ],
 
         // Automation
@@ -1051,7 +1052,6 @@ LANGUAGES.EN = {
         'radio-desc' : {
             'notation': ['Formatting Notation',['Scientific','Standard','Mixed Scientific','Logarithm','Elemental']],
             'comma-format': ['Maximum OoMs of Number Commas',['3','6','9','12','15']],
-            'mixed-sci': ['Starting Number of Mixed Scientific',['e63','e93','e303','e3003']],
             'autosave': ['Autosaving',['Disabled','Enabled']],
             'autosave-time': ['Autosave Interval',['15s','30s','60s','120s']],
             'offline': ['Offline Progress',['Disabled','Enabled']],
