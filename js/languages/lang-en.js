@@ -1049,7 +1049,7 @@ LANGUAGES.EN = {
         },
 
         'radio-desc' : {
-            'notation': ['Formatting Notation',['Scientific','Standard','Mixed Scientific','Logarithm']],
+            'notation': ['Formatting Notation',['Scientific','Standard','Mixed Scientific','Logarithm','Elemental']],
             'comma-format': ['Maximum OoMs of Number Commas',['3','6','9','12','15']],
             'autosave': ['Autosaving',['Disabled','Enabled']],
             'autosave-time': ['Autosave Interval',['15s','30s','60s','120s']],
