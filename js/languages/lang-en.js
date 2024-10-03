@@ -845,7 +845,6 @@ LANGUAGES.EN = {
             [`Stellar Prestige`, x=>`Boost ${toTextStyle('Prestige','prestige')} shards gain by ${x} to the exponent.`, x=>`Boost ${toTextStyle('Reservatories','reserv')} gain by ${x}.`],
             [`Stellar Fragments`, x=>`Boost ${toTextStyle('Magmatic','core')} fragments gain by ${x}.`, x=>`Boost ${toTextStyle('Trajectories','traject')} gain by ${x}.`],
             [`Stellar Sharks`, x=>`Boost the exponent of ${toTextStyle('Humanoid','humanoid')} sharks by ${x}.`, x=>`Reduce the ${toTextStyle('Experiment','experiment')} tier requirement by ${x}`],
-            [`Stellar Stone`, x=> `Boost the exponent of <b>Stone</b> by ${x}.`],
         ],
 
         // Automation
@@ -982,8 +981,8 @@ LANGUAGES.EN = {
         },
         'scaling-start': "Starts at",
         'scaling-mode': {
-            "L": x => `<b>${x}</b> linearly`,
-            "D": x => `<b>${x}</b> to exponent`,
+            "L": x => `<b>${x}</b> linearly.`,
+            "D": x => `<b>${x}</b> to exponent.`,
         },
         'scaling-info': `Scalings will be added as soon as you reach them. <b>N</b> - amount, <b>S</b> - starting`,
 
@@ -1050,7 +1049,7 @@ LANGUAGES.EN = {
         },
 
         'radio-desc' : {
-            'notation': ['Formatting Notation',['Scientific','Standard','Mixed Scientific','Logarithm','Elemental']],
+            'notation': ['Formatting Notation',['Scientific','Standard','Mixed Scientific','Logarithm','Elemental','Prestige Layer']],
             'comma-format': ['Maximum OoMs of Number Commas',['3','6','9','12','15']],
             'autosave': ['Autosaving',['Disabled','Enabled']],
             'autosave-time': ['Autosave Interval',['15s','30s','60s','120s']],
